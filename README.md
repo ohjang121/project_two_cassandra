@@ -4,7 +4,7 @@ Objective: Build an ETL pipeline for a music app (Sparkify) using Python & Cassa
 
 ## Solution Approach
 
-I compiled all logic into one script, [music_etl.py], derived from the Jupyter Notebook step by step guidance. This script achieves the same purpose with log messages helpful for the reviewer to understand each step.
+I compiled all logic into one script, [music_etl.py](https://github.com/ohjang121/project_two_cassandra/blob/master/music_etl.py), derived from the Jupyter Notebook step by step guidance. This script achieves the same purpose with log messages helpful for the reviewer to understand each step.
 
 1. `conso_data()`: Consolidate log data in the `event_data` directory into 1 csv, write it into `event_datafile_new.csv` (done by default)
 2. `create_sparkifydb()`: Establish Cassandra connection and create sparkifydb keyspace; returns cluster and session object
