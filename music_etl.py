@@ -105,7 +105,7 @@ def create_table_1(session, file):
     '''
 
     # model music_app_history based on query_1
-    # set session_key = partition key (first restriction)
+    # set session_id = partition key (first restriction)
     # set item_in_session = clustering key (second restriction)
     create_query_1 = '''CREATE TABLE IF NOT EXISTS music_app_history
                         (session_id INT,
